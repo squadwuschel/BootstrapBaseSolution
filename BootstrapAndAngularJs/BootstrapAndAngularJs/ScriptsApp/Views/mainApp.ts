@@ -1,3 +1,4 @@
 ﻿angular.module("mainApp", [
-    "personCtrl"
+    "personCtrl",
+    "homeSrv"
 ]);

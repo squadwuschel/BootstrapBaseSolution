@@ -16,6 +16,9 @@ namespace BootstrapAndAngularJs
 
             bundles.Add(new ScriptBundle("~/bundles/angularApp").Include(
                     "~/ScriptsApp/Views/mainApp.js",
+                    "~/ScriptsApp/Interfaces/Person.js",
+                    "~/ScriptsApp/Views/Home/personCtrl.js",
+                    "~/ScriptsApp/Services/homeSrv.js",
                     "~/ScriptsApp/Views/Home/personCtrl.js"
                     ));
 

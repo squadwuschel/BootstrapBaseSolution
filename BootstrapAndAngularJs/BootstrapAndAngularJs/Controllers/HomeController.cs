@@ -20,24 +20,24 @@ namespace BootstrapAndAngularJs.Controllers
             return View();
         }
 
-        public Person GetPerson(int id)
+        public ActionResult GetPerson(int id)
         {
-            return PersonModelBuilder.GetPerson(id);
+            return Json(PersonModelBuilder.GetPerson(id), JsonRequestBehavior.AllowGet);
         }
 
-        public int AddOrUpdatePerson(Person person)
+        public ActionResult AddOrUpdatePerson(Person person)
         {
-            return PersonModelBuilder.AddOrUpdatePerson(person);
+            return Json(PersonModelBuilder.AddOrUpdatePerson(person), JsonRequestBehavior.AllowGet);
         }
 
-        public List<Person> GetAllPersons()
+        public ActionResult GetAllPersons()
         {
-            return PersonModelBuilder.GetAllPersons();
+            return Json(PersonModelBuilder.GetAllPersons(), JsonRequestBehavior.AllowGet);
         }
 
-        public List<Person> SearchPerson(string name)
+        public ActionResult SearchPerson(string name)
         {
-            return PersonModelBuilder.SearchPerson(name);
+            return Json(PersonModelBuilder.SearchPerson(name), JsonRequestBehavior.AllowGet);
         }
     }
 }

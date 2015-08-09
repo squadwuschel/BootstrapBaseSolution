@@ -246,6 +246,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="ScriptsApp\Interfaces\Person.ts" />
+    <TypeScriptCompile Include="ScriptsApp\Services\homeSrv.ts" />
     <TypeScriptCompile Include="ScriptsApp\Views\Home\personCtrl.ts" />
     <TypeScriptCompile Include="ScriptsApp\Views\mainApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />

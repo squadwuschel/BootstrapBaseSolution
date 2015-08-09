@@ -22,7 +22,15 @@ namespace BootstrapAndAngularJs.Models.Person.Builder
         {
             if (person.Id == 0)
             {
-                person.Id = PersonList.Max(p => p.Id) + 1;
+                if (PersonList.Count == 0)
+                {
+                    person.Id = 1;
+                }
+                else
+                {
+                    person.Id = PersonList.Max(p => p.Id) + 1;
+                }
+
                 PersonList.Add(person);
             }
             else
